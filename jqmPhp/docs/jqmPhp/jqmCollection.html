@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class jqmCollection</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class jqmCollection</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This class represents a collection.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Bruno Maia &lt;<a href="mailto:brunoleaomaia@gmail.com">brunoleaomaia@gmail.com</a>&gt;</li>
+				<li><span class="field">version:</span> 0.03</li>
+				<li><span class="field">copyright:</span> Copyright (c) 2011, Bruno Maia</li>
+				<li><span class="field">link:</span> <a href="http://www.jqmphp.com/">jqmPhp Website</a></li>
+				<li><span class="field">link:</span> <a href="http://www.jquerymobile.com">jQuery Mobile Website</a></li>
+				<li><span class="field">link:</span> <a href="http://code.google.com/p/jqmphp/">jqmPhp Project Website</a></li>
+				<li><span class="field">since:</span> 0.01</li>
+				<li><span class="field">license:</span> <a href="http://www.gnu.org/licenses/gpl.html">GNU Public License</a></li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_lib---jqmCollection.php.html">/lib/jqmCollection.php</a> (line <span class="field"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a38">38</a></span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">jqmCollection</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$items</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$separator</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$prefix</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$suffix</span> = <span class="var-default">''</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#add" title="details" class="method-name">add</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$item</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#addFromArray" title="details" class="method-name">addFromArray</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$items</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#get" title="details" class="method-name">get</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAll" title="details" class="method-name">getAll</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#insert" title="details" class="method-name">insert</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$item</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|<a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#prefix" title="details" class="method-name">prefix</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#remove" title="details" class="method-name">remove</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|<a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#separator" title="details" class="method-name">separator</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#set" title="details" class="method-name">set</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$item</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#size" title="details" class="method-name">size</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string|<a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+										<a href="#suffix" title="details" class="method-name">suffix</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#__toString" title="details" class="method-name">__toString</a>
+										()
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a50">50</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">jqmCollection</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$items</span> = <span class="var-default">array()</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$separator</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$prefix</span> = <span class="var-default">''</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$suffix</span> = <span class="var-default">''</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$items</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$separator</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$prefix</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$suffix</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodadd" id="add"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">add</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a77">77</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds an item.</p>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			add
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$item</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$item</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddFromArray" id="addFromArray"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addFromArray</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a86">86</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds many items from an array.</p>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			addFromArray
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$items</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$items</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodget" id="get"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">get</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a102">102</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets an item in a position.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			get
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$index</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetAll" id="getAll"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAll</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a94">94</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets all items.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAll
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodinsert" id="insert"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">insert</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a134">134</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Inserts an item in a position.</p>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			insert
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$item</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$index</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$item</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodprefix" id="prefix"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">prefix</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a166">166</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets and sets the prefix property.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string|<a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			prefix
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremove" id="remove"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">remove</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a120">120</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Removes an item in a position.</p>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			remove
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$index</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodseparator" id="separator"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">separator</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a155">155</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets and sets the separator property.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string|<a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			separator
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodset" id="set"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">set</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a111">111</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets an item in a position.</p>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			set
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$index</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$item</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$index</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$item</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsize" id="size"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">size</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a147">147</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the collection size.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			size
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodsuffix" id="suffix"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">suffix</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a177">177</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets and sets the suffix property.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">string|<a href="../jqmPhp/jqmCollection.html">jqmCollection</a></span>
+		<span class="method-name">
+			suffix
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__toString" id="__toString"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">__toString</span> (line <span class="line-number"><a href="../__filesource/fsource_jqmPhp__libjqmCollection.php.html#a62">62</a></span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			__toString
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 22 Mar 2011 19:16:30 -0300 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.4.3</a>
+	</p>
+	</div></body>
+</html>
