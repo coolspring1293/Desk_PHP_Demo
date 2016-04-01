@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>  
+<script type="text/javascript" src="jquery.min.js"></script>  
 <script>  
     $(document).ready(function() {  
         //alert('b');  
@@ -38,13 +38,13 @@
  
  if(isset($_REQUEST['username'])) {
  	//$p->addContent($_REQUEST['username'] . '<br>');
- 	$con = mysql_connect("localhost","root","coolspring");
+ 	$con = mysql_connect(SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT, SAE_MYSQL_USER, SAE_MYSQL_PASS);
     if (!$con)
     {
     die('Could not connect: ' . mysql_error());
     }
 
-    mysql_select_db("desk", $con);
+    mysql_select_db("app_liuw53", $con);
     $result = mysql_query('select count(*) as ct from user where username = "' . $_REQUEST['username'] . '" and password = "' . $_REQUEST['password']. '"');
     $row = mysql_fetch_array($result);
     $tmm = $row['ct'];
@@ -65,12 +65,12 @@
  */
  $form = new jqmForm('form1');
  $form->action('li.php')->method('post');
- $form->add(new jqmInput('username', 'username', 'text', 'liuw53', 'Username', '', true));
- $form->add(new jqmInput('password', 'password', 'password', 'hhhh', 'Password', '', true));
+ $form->add(new jqmInput('username', 'username', 'text', '', 'Username', '', true));
+ $form->add(new jqmInput('password', 'password', 'password', '', 'Password', '', true));
  $form->add(new jqmInput('submit', 'submit', 'submit', 'log in', '', 'b', true));
 
  $send = $form->add(new jqmButton(), true);
- $send->text('register')->href("register.php");
+ $send->text('register')->href("register.php#");
  /**
  * Disable Form Ajax
  */

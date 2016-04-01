@@ -69,13 +69,13 @@
 
 
     if(isset($_REQUEST['msg'])) {
-        $con = mysql_connect("localhost","root","coolspring");
+        $con = mysql_connect(SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT, SAE_MYSQL_USER, SAE_MYSQL_PASS);
         if (!$con)
         {
         die('Could not connect: ' . mysql_error());
         }
 
-        mysql_select_db("desk", $con);
+        mysql_select_db("app_liuw53", $con);
         $sql = 'insert into post values( "' . str_replace(" ", "", $uName) . '", now(), 1, "' . $_REQUEST['msg']. '")';
         if(mysql_query($sql)) 
         {

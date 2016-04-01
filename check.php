@@ -29,7 +29,7 @@
     $isLog = 0;
     if (!empty($uName)) 
     {
-        setcookie("UserName",$uName, time()+240);
+        setcookie("UserName",$uName, time()+60*60*36);
         $p->content()->add('<p> Hi, ' . $uName .'!</p>');
         $isLog = 1;
         $p->addContent('<a href="arrive.php#" data-role="button" data-theme="a">Arrive</a>');

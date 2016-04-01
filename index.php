@@ -1,8 +1,8 @@
 <?php
     /**
-     * Example 3 - Adding Objects
+     * Desk index.php
      * @package jqmPhp
-     * @filesource
+     * Luther:Liu Wang.
      */
 
     /**
@@ -10,13 +10,13 @@
      */
     include 'jqmPhp/lib/jqmPhp.php';
     header("Content-Type: text/html; charset=UTF-8");
-    $con = mysql_connect("localhost","root","coolspring");
+    $con = mysql_connect(SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT, SAE_MYSQL_USER, SAE_MYSQL_PASS);
     if (!$con)
     {
     die('Could not connect: ' . mysql_error());
     }
 
-    mysql_select_db("desk", $con);
+    mysql_select_db("app_liuw53", $con);
     $result = mysql_query("SELECT * FROM post  order by create_time desc");
 
     /**
@@ -25,18 +25,18 @@
     $j = new jqmPhp();
 
     /**
-     * Config 'html' and 'head' tag.
+     * Con fig 'html' and 'head' tag.
      */
 
     
     $j->html()->doctype('html');
     $j->head()->title('DESK');
-    //$j->head()->css('http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css');
-    //$j->head()->jq('http://code.jquery.com/jquery-1.4.4.min.js');
-    //$j->head()->jqm('http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js');
-    //$j->head()->add(new jqmLink('css/custom.css'));         // Adding a custom CSS.
-    //$j->head()->add(new jqmScript('js/custom.js'));         // Adding a custom JavaScript.
-    //$j->body()->attribute('onload', 'initCustom();');     // Adding a custom attribute to 'body' tag.
+    $j->head()->css('http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css');
+    $j->head()->jq('http://code.jquery.com/jquery-1.4.4.min.js');
+    $j->head()->jqm('http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js');
+    $j->head()->add(new jqmLink('css/custom.css'));         // Adding a custom CSS.
+    $j->head()->add(new jqmScript('js/custom.js'));         // Adding a custom JavaScript.
+    $j->body()->attribute('onload', 'initCustom();');     // Adding a custom attribute to 'body' tag.
 
     /**
      * Create and config a jqmPage object.
@@ -46,8 +46,8 @@
     $p = new jqmPage('HOME');
     $p->theme('b')
     ->title('HOME')
-    ->header()->addButton('About', 'http://www.liuw53.top/wp/', 'a', 'arrow-l')
-              ->addButton('Log in', 'li.php', 'b', 'arrow-r')
+    ->header()->addButton('About', 'ref.php#', 'a', 'arrow-l')
+              ->addButton('Log in', 'li.php#', 'b', 'arrow-r')
               ->theme('a');
     /**
      * addContent() is alias to content()->add().
@@ -55,12 +55,12 @@
 
     //setcookie("UserName","hhhh",time()+20);
     
-    $p->content()->add('<h1>Hello World！</h1>');
+    $p->content()->add('<h1>Hello April Fool！</h1>');
 
     if (!empty($_REQUEST['username'])) {
         $uName=$_REQUEST['username'] ;
         $p->content()->add('<h1> Welcome Back, ' . $uName .'!</h1>');
-        setcookie("UserName",$_REQUEST['username'],time()+240);
+        setcookie("UserName",$_REQUEST['username'],time()+ 60*60*36);
     } 
     elseif (!empty($_COOKIE['UserName'])) 
     {

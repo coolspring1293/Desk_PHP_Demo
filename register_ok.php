@@ -23,13 +23,13 @@
         $desc = $_REQUEST["msg"];
 
 
-        $con = mysql_connect("localhost","root","coolspring");
+        $con = mysql_connect(SAE_MYSQL_HOST_M.':'.SAE_MYSQL_PORT, SAE_MYSQL_USER, SAE_MYSQL_PASS);
         if (!$con)
         {
             die('Could not connect: ' . mysql_error());
         }
 
-        mysql_select_db("desk", $con);
+        mysql_select_db("app_liuw53", $con);
         $sql = 'insert into user values("'. $id . '", "'. $pwd .'", '. $age .', "'. $desc .'")';
         ///$sql = 'insert into user values("ffsdfasfdsfdfaf", "ddfadsd", 20, "iiadsfai")'; 
         if(mysql_query($sql)) {
