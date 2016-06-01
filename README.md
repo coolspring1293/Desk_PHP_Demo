@@ -17,6 +17,7 @@ echo(new jqmPhp());
 For more information visit [the offical site](http://www.jqmphp.com).
 
 ## Presetation
-[DESK](http://www.liuw53.top/desk/)<http://www.liuw53.top/desk/>
+DESK: <http://www.liuw53.top/desk/>
+
 The conf-info is based on [SAE](http://sae.sina.com.cn)(坑B).
 ![](http://liuw53-wp.stor.sinaapp.com/page%2F4AD9F3BA-2728-405A-ADB4-BDE1EB8C4437.png)
